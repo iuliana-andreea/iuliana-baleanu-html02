@@ -1,0 +1,22 @@
+body {
+  background-color: red;
+
+  h1 {
+    color: #fff;
+  }
+}
+
+.container {
+  width: 100%;
+  border: 1px solid green;
+
+  .header {
+    display: flex;
+
+    a {
+      span {
+        color: green;
+      }
+    }
+  }
+}
