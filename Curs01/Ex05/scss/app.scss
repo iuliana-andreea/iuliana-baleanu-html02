@@ -1,3 +1,6 @@
+$brand-main: red;
+$brand-secondary: green;
+
 // Pentru ancorele din lista neordonata elimina
 // linia si coloreaza-le rosii atunci cand
 // mouseul face hover pe ele folosind
@@ -7,7 +10,7 @@ ul {
     text-decoration: none;
 
     &:hover {
-      color: red;
+      color: $brand-main;
     }
 
     // Coloreaza aceleasi ancore mov atunci cand se face
@@ -20,7 +23,7 @@ ul {
     // pseudo-clasa :visited
     &:active,
     &:visited {
-      color: green;
+      color: $brand-secondary;
     }
   }
 }
