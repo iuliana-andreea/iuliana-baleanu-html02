@@ -12,7 +12,8 @@ body {
 }
 
 .box-1 {
-  margin-top: $sm;
+  margin-top: $sm + $xs - ($sm / $xs);
+  // padding-left: (($md / $xs) + ($sm / $xs)) px;
 }
 
 .box-2 {
@@ -27,13 +28,13 @@ body {
 }
 
 .box-4 {
-  margin-top: $lg; 
+  margin-top: $lg;
   border-width: $md;
   padding: 25px;
 }
 
 .box-5 {
   margin: $sm $xl;
-  border-width: $md; 
+  border-width: $md;
   padding: $lg;
 }

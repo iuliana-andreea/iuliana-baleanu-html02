@@ -1,0 +1,61 @@
+.square {
+  display: inline-block;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+.circle {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.rhombus {
+  display: inline-block;
+  border: 1px solid black;
+  transform: rotate(45deg) skew(10deg, 10deg);
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.button-left::before {
+  width: 0;
+  height: 0;
+  content: "";
+  border-top: 1px solid transparent;
+  border-right: 7px solid black;
+  border-bottom: 1px solid transparent;
+}
+
+.button-right::before {
+  width: 0;
+  height: 0;
+  content: "";
+  border-top: 1px solid transparent;
+  border-left: 10px solid black;
+  border-bottom: 1px solid transparent;
+}
+
+.button-up::before {
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid black;
+}
+
+.button-down::before {
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */

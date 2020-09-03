@@ -9,3 +9,39 @@
   height: 150px;
   border: 1px solid #000;
 }
+
+// Folosind @for si keywordul to genereaza clase de forma 
+// box-01 (box-02... box-10) pentru a stila elementele din 
+// primul rand, fiecare clasa trebuie sa ingroase cu 1px 
+// bordura elementelor 
+@for $i from 1 to 11 {
+  $class-name: '.box';
+  @if $i < 10 {
+    $class-name: '.box-0#{$i}'
+  } @else {
+    $class-name: '.box-#{$i}'
+  }
+
+  #{$class-name} {
+    border-width: #{$i}px;
+  }
+}
+
+//TEMA
+//In mod similar folosind through, genereaza clase pentru 
+// randul urmator de elemente, astfel incat elementele din 
+// pozitii pare sa aibe fundalul gri iar cele din pozitii 
+// impare sa aibe bordura dotted 
+@for $i from 1 through 10 {
+  $class-name: '.box-#{$i}';
+
+  @if $i % 2 == 0 {
+    #{$class-name} {
+      background-color: gray;
+    }
+  } @else {
+    #{$class-name} {
+      border-style: dotted;
+    }
+  }
+}

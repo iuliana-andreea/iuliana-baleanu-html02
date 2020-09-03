@@ -4,3 +4,39 @@
   margin: 16px 0;
 }
 
+//Genereaza clase de forma btn-primary (btn-secondary, etc…) 
+//pentru a putea seta proprietatea color pentru elementele 
+//din primul rand, dupa urmatorele valori
+$colors: (
+  "main": red, 
+  "primary": blue, 
+  "secondary": green,
+  "tertiary": yellow,
+  "neutral": gray
+);
+
+@each $suffix, $color in $colors {
+  .btn-#{$suffix} {
+    color: #{$color};
+  }
+}
+
+//TEMA
+//Genereaza clase de forma btn-bg-primary (btn-bg-secondary, etc…) 
+//pentru a putea seta proprietatea background-color in functie de 
+//valorile date pe elementele din randul doi.
+@each $suffix, $color in $colors {
+  .btn-bg-#{$suffix} {
+    background-color: #{$color};
+  }
+}
+
+//Genereaza clase de forma text-primary (text-secondary) in mod similar 
+//pentru a seta proprietatea color a elementelor din randul trei.
+@each $suffix, $color in $colors {
+  .text-#{$suffix} {
+    color: #{$color};
+  }
+}
+
+

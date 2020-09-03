@@ -1,0 +1,83 @@
+// Creaza un mixin care sa poata genera CSS pentru clase 
+// ce vor fi aplicate pentru a randa elemente patrate, cercuri 
+// sau romburi 
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin shape($shape: 'square') {
+    display: inline-block;
+    border: 1px solid black;
+    @if $shape == 'square' {
+    } @else if $shape == 'circle' {
+        border-radius: 50%;
+    } @else {
+        transform: rotate(45deg) skew(10deg, 10deg);
+        margin-left: 10px;
+    }
+}
+
+.square {
+    @include shape('square');
+    @include size(50px, 50px);
+}
+
+.circle {
+    @include shape('circle');
+    @include size(50px, 50px);
+}
+
+.rhombus {
+    @include shape('rhombus');
+    @include size(40px, 40px);
+}
+
+// Creaza  un mixin care sa poata fi aplicat pe butoane pentru 
+// a genera sageti de tip next/previous/up/down
+@mixin btn-dir($direction: 'left') {
+    width: 0;
+    height: 0;
+    content: '';
+    @if $direction == 'left' {
+      border-top: 1px solid transparent;
+      border-right: 7px solid black;
+      border-bottom: 1px solid transparent;
+    } @else if $direction == "right" {
+      border-top: 1px solid transparent;
+      border-left: 10px solid black;
+      border-bottom: 1px solid transparent;
+    } @else if $direction == "up" {
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid black;
+    } @else {
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 10px solid black;
+    }
+}
+
+.button-left {
+    &::before {
+        @include btn-dir('left');
+    }
+}
+
+.button-right {
+    &::before {
+        @include btn-dir('right');
+    }
+}
+
+.button-up {
+    &::before {
+        @include btn-dir('up');
+    }
+}
+
+.button-down {
+    &::before {
+        @include btn-dir('down');
+    }
+}
