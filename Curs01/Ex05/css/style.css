@@ -1,37 +1,37 @@
 ul a {
-  text-decoration: none;
-}
-ul a:hover {
-  color: red;
-}
-ul a:active, ul a:visited {
-  color: green;
-}
+  text-decoration: none; }
+  ul a:hover {
+    color: red; }
+  ul a:active, ul a:visited {
+    color: green; }
 
 .para {
-  padding: 10px 20px;
-}
+  padding: 10px 20px; }
 
 .para-short {
   width: 50%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .paragraphs .para {
-  padding: 10px 20px;
-}
-.reverse .paragraphs .para {
-  width: 50%;
-  padding: 0;
-  margin: 0 auto;
-}
+  padding: 10px 20px; }
+  .reverse .paragraphs .para {
+    width: 50%;
+    padding: 0;
+    margin: 0 auto; }
 .paragraphs .para-short {
   width: 50%;
-  margin: 0 auto;
-}
-.reverse .paragraphs .para-short {
-  width: 100%;
-  padding: 10px 20px;
-}
+  margin: 0 auto; }
+  .reverse .paragraphs .para-short {
+    width: 100%;
+    padding: 10px 20px; }
+
+ol a:hover {
+  color: magenta; }
+ol a:active {
+  color: pink; }
+ol a:visited {
+  color: lightcoral; }
+  .all-visited ol a:visited {
+    text-decoration: line-through; }
 
 /*# sourceMappingURL=style.css.map */

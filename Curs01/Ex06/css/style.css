@@ -2,8 +2,7 @@
   width: 80%;
   border: 1px solid #000;
   padding: 10px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .square-magenta {
   width: 200px;
@@ -11,8 +10,7 @@
   display: block;
   border: 1px solid #000;
   background-color: turquoise;
-  background-color: magenta;
-}
+  background-color: magenta; }
 
 .square-peru {
   width: 200px;
@@ -20,8 +18,7 @@
   display: block;
   border: 1px solid #000;
   background-color: turquoise;
-  background-color: peru;
-}
+  background-color: peru; }
 
 .square-purple {
   width: 200px;
@@ -29,7 +26,42 @@
   display: block;
   border: 1px solid #000;
   background-color: turquoise;
+  background-color: purple; }
+
+.circles {
+  width: 75%;
+  margin: 0 auto;
+  border: 2px dotted saddlebrown;
+  border-radius: 20px; }
+
+.circle-red {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid red;
   background-color: purple;
-}
+  background-color: firebrick; }
+
+.circle-green {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid red;
+  background-color: purple;
+  background-color: olivedrab; }
+
+.circle-blue {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid red;
+  background-color: purple;
+  background-color: royalblue; }
+
+.circle-border-blue {
+  border: 10px solid royalblue; }
 
 /*# sourceMappingURL=style.css.map */

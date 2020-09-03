@@ -1,5 +1,9 @@
 $brand-main: red;
 $brand-secondary: green;
+// TEMA
+$hover: magenta;
+$active: pink;
+$visited: lightcoral;
 
 // Pentru ancorele din lista neordonata elimina
 // linia si coloreaza-le rosii atunci cand
@@ -72,3 +76,33 @@ ul {
     }
   }
 }
+
+// Creeaza trei variabile noi pentru culorile: magenta, lightcoral si pink 
+// Foloseste-le pentru starile ancorelor din listele ordonate: 
+// hover: magenta
+// active: pink 
+// visited: lightcoral
+ol {
+  a {
+    &:hover {
+      color: $hover;
+    }
+    &:active {
+      color: $active;
+    }
+    &:visited {
+      color: $visited;
+
+      .all-visited & {
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+// Folosind inspectorul aplica o clasa numita all-visited 
+// pe lista ordonata. Cand aceasta clasa este pe element, 
+// toate ancorele din acesta sa fie taiate (line-through)
+
+//Nu am inteles exact cum functioneaza, nu a parut ca s-a 
+// modificat cu nimic ultima modificare
