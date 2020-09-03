@@ -3,4 +3,14 @@
   color: gray;
 }
 
+.brand-inverted {
+  background-color: gray;
+  color: blue;
+}
+
+.brand-special {
+  background-color: pink;
+  color: gray;
+}
+
 /*# sourceMappingURL=style.css.map */
