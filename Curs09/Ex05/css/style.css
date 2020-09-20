@@ -90,3 +90,47 @@ egal intre ele si intinde elementul trei */
   max-width: none;
   width: auto;
 }
+
+/* TEMA */
+
+/* In cutia 4 orienteaza elementele pe coloana,
+pozitioneaza-le pe latura din dreapta folosind space-between
+si folosind nth-child pozitioneaza ultimul element
+pe latura din stanga */
+.flex-container-04 {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.flex-container-04 :nth-child(5) {
+  align-self: flex-start;
+}
+
+/* In cutia 5 orientaza elementele pe coloana,
+pozitioneaza-le central pe orizontala si cu spatiu i
+ntre ele pe verticala, apoi intinde elementul trei */
+.flex-container-05 {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-container-05 :nth-of-type(4) {
+  align-self: stretch;
+  max-width: none;
+  width: auto;
+}
+
+/* In cutia 6 orienteaza elementele pe coloana,
+pozitioneaza-le in coltul din stanga jos si pozitioneaza
+elementul 2 pe latura din dreapta a elementului */
+.flex-container-06 {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.flex-container-06 :nth-of-type(3) {
+  align-self: flex-end;
+}
