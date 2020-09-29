@@ -4,3 +4,18 @@
 @import './product_tile';
 @import './home-newsletter';
 @import './home-payment';
+
+.content-main {
+  section {
+    h1 {
+      text-align: center;
+      font-size: 41px;
+      color: $gray-secondary;
+      font-weight: 300;
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}
