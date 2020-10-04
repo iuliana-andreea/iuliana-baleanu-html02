@@ -18,7 +18,7 @@
 }
 
 .grid-item-4 {
-  background-color: lightsalmon
+  background-color: lightsalmon;
 }
 
 .grid-item-4 {
@@ -27,6 +27,22 @@
 
 /* can't touch this 🔨 */
 
-
-
-
+/* Tema */
+/* Creaza un grid mobile first cu max-width: 1290 si width: 100% dupa urmatoarea matrice:
+header
+filters
+content
+footer
+Sidebarul este ascuns pe mobil
+Asociaza primul element cu zona header
+Asociaza al doilea element cu zona filters
+Asociaza al treilea element cu zona content
+Asociaza al patrulea element cu zona sidebar
+Asociaza al cincilea element cu zona footer */
+/* Pentru rezolutiile mai mari de 800 de pixeli, configureaza gridul dupa matricea:
+header header header
+sidebar . filters
+sidebar . content
+footer footer footer
+Configureaza gridul cu urmatoarele coloane 400px 10px 1fr
+ */
